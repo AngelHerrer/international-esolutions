@@ -208,18 +208,19 @@ $valores = new Valores();
                                 <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
                                     <thead>
                                         <tr>
-                                            <th>ID Empleado</th>
-                                            <th>Nombre</th>
-                                            <th>Apellido paterno</th>
-                                            <th>Apellido materno</th>
-                                            <th>Servicio</th>
-                                            <th>CSS grade</th>
+                                            <th>CLAVE CCB</th>
+                                            <th>DESCRIPCIÓN</th>
+                                            <th>UNIDAD JAYOR</th>
+                                            <th>PRICE JAYOR</th>
+                                            <th>UNIDAD DEGASA</th>
+                                            <th>PRECIO DEGASA</th>
+                                            <th>EDIT</th>
                                         </tr>
                                     </thead>
                                     <tbody>
 
                                         <?php
-                                        $valores->getAllEmp();
+                                        $valores->getMaterialAll();
                                         ?>
                                     </tbody>
                                 </table>
