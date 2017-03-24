@@ -58,7 +58,7 @@ $valores = new Valores();
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html">SB Admin v2.0</a>
+                    <a class="navbar-brand" href="index.html">International ESolutions</a>
                 </div>
                 <!-- /.navbar-header -->
 
@@ -96,13 +96,13 @@ $valores = new Valores();
                                 </div>
                             </li>
                             <li>
-                                <a href="index.php"><i class="glyphicon glyphicon-user fa-fw"></i> Empleados</a>
+                                <a href="index.php"><i class="glyphicon glyphicon-user fa-fw"></i> Material</a>
                             </li>
                             <li>
-                                <a href="addEmp.php"><i class="glyphicon glyphicon-upload fa-fw"></i> Dar de alta empleado</a>
+                                <a href="addEmp.php"><i class="glyphicon glyphicon-upload fa-fw"></i> Nuevo Material</a>
                             </li>
 
-                            <li>
+<!--                            <li>
                                 <a href="#"><i class="glyphicon glyphicon-file fa-fw"></i>Registra Empleados<span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level">
                                     <li>
@@ -111,7 +111,7 @@ $valores = new Valores();
                                     <li>
                                         <a href="buttons.html">Nomina</a>
                                     </li>
-                                    <!--                                    <li>
+                                                                        <li>
                                                                             <a href="#notifications.html">Notifications</a>
                                                                         </li>
                                                                         <li>
@@ -122,11 +122,11 @@ $valores = new Valores();
                                                                         </li>
                                                                         <li>
                                                                             <a href="#grid.html">Grid</a>
-                                                                        </li>-->
+                                                                        </li>
                                 </ul>
-                                <!-- /.nav-second-level -->
-                            </li>
-                            <li>
+                                 /.nav-second-level 
+                            </li>-->
+<!--                            <li>
                                 <a href="#"><i class="glyphicon glyphicon-wrench fa-fw"></i>Servicios<span class="fa arrow"></span></a>
                                 <ul class="nav nav-second-level">
                                     <li>
@@ -135,7 +135,7 @@ $valores = new Valores();
                                     <li>
                                         <a href="#">Provedores</a>
                                     </li>
-<!--                                    <li>
+                                    <li>
                                         <a href="#">Third Level <span class="fa arrow"></span></a>
                                         <ul class="nav nav-third-level">
                                             <li>
@@ -151,9 +151,9 @@ $valores = new Valores();
                                                 <a href="#">Third Level Item</a>
                                             </li>
                                         </ul>
-                                    </li>-->
+                                    </li>
                                 </ul>
-                            </li>
+                            </li>-->
                             <!--                            <li>
                                                             <a href="#tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
                                                         </li>
