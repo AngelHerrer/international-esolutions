@@ -201,7 +201,7 @@ $valores = new Valores();
                     }
                     ?> 
                     <div class="col-lg-12">
-                        <h2 class="page-header">Dar de alta a empleado</h2>
+                        <h2 class="page-header">Dar de alta a material</h2>
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
@@ -219,22 +219,22 @@ $valores = new Valores();
                                         <!-- /.col-lg-6 (nested) -->
                                         <div class="col-lg-12">
                                             <div class="col-lg-1">
-                                                <label>Nombre: </label>
+                                                <label>Clave CCB: </label>
                                             </div>
                                             <div class="form-group col-lg-3">
-                                                <input type="text" class="form-control" name="nameEmp">
+                                                <input type="text" class="form-control" name="claveCbb">
                                             </div>
                                             <div class="col-lg-1">
-                                                <label>Apellido Paterno: </label>
+                                                <label>Descripción: </label>
                                             </div>
                                             <div class="form-group col-lg-3">
-                                                <input type="text" class="form-control" name="patEmp" >
+                                                <input type="text" class="form-control" name="descripcion" >
                                             </div>
                                             <div class="col-lg-1">
-                                            <label>Apellido materno: </label>
+                                            <label>Unidad jayor: </label>
                                             </div>
                                             <div class="form-group col-lg-3">
-                                                <input type="text" class="form-control" name="matEmp" >
+                                                <input type="text" class="form-control" name="unitiJayor" >
                                             </div>
                                         </div>
                                         <!-- /.col-lg-6 (nested) -->
@@ -243,25 +243,22 @@ $valores = new Valores();
                                         <!-- /.col-lg-6 (nested) -->
                                         <div class="col-lg-12">
                                             <div class="col-lg-1">  
-                                            <label>RFC: </label>
+                                            <label>Precio jayor: </label>
                                             </div>
                                             <div class="form-group col-lg-3">
-                                                <input type="text" class="form-control" name="rfcEmp" >
+                                                <input type="text" class="form-control" name="priceJayor" >
                                             </div>
                                             <div class="col-lg-1">
-                                            <label>Fecha de nacimiento: </label>
+                                            <label>Unidad de gasa: </label>
                                             </div>
                                             <div class="form-group col-lg-3">
-                                                <input type="date" class="form-control" name="dateEmpNac" >
+                                                <input type="text" class="form-control" name="unitiGasa" >
                                             </div>
                                             <div class="col-lg-1">
-                                            <label>Lugar de nacimiento: </label>
+                                            <label>Precio de gasa: </label>
                                             </div>
                                             <div class="form-group col-lg-3">
-                                                <select class="form-control" name="placeEmp">
-                                                    <option>---</option>
-                                                    <?php $valores->allState(); ?>
-                                                </select>
+                                                <input  type="text" class="form-control" name="priceGasa">
                                             </div>
                                         </div>
                                         <!-- /.col-lg-6 (nested) -->
@@ -276,7 +273,7 @@ $valores = new Valores();
                         <!-- /.col-lg-12 -->
                     </div>
 
-                    <div class="row">
+<!--                    <div class="row">
                         <div class="col-lg-12">
                             <div class="panel panel-default">
                                 <div class="panel-heading">
@@ -286,7 +283,7 @@ $valores = new Valores();
                                 <div class="panel-body">
                                     <div class="row">
 
-                                        <!-- /.col-lg-6 (nested) -->
+                                         /.col-lg-6 (nested) 
                                         <div class="col-lg-12">
                                             <div class="col-lg-1">    
                                                 <label>Calle /#: </label>
@@ -308,11 +305,11 @@ $valores = new Valores();
                                             </div>
                                             
                                         </div>
-                                        <!-- /.col-lg-6 (nested) -->
+                                         /.col-lg-6 (nested) 
                                     </div>
                                     <div class="row separetorTopInput">
 
-                                        <!-- /.col-lg-6 (nested) -->
+                                         /.col-lg-6 (nested) 
                                         <div class="col-lg-12">
                                             <div class="col-lg-1">
                                                 <label>Estado: </label>
@@ -333,11 +330,11 @@ $valores = new Valores();
                                                 </select>
                                             </div>
                                             
-                                            <!-- /.col-lg-6 (nested) -->
+                                             /.col-lg-6 (nested) 
                                         </div>
                                     </div>
                                         <div class="row separetorTopInput">
-                                            <!-- /.col-lg-6 (nested) -->
+                                             /.col-lg-6 (nested) 
                                             <div class="col-lg-12">
                                                 <div class="col-lg-1">
                                                     <label>Teléfono: </label>
@@ -352,17 +349,17 @@ $valores = new Valores();
                                                     <input type="number" class="form-control" name="phoneTwo" >
                                                 </div>
                                             </div>
-                                            <!-- /.col-lg-6 (nested) -->
+                                             /.col-lg-6 (nested) 
                                         </div>
                                     </div>
-                                    <!-- /.panel-body -->
+                                     /.panel-body 
                                 </div>
-                                <!-- /.panel -->
+                                 /.panel 
                             </div>
-                            <!-- /.col-lg-12 -->
-                        </div>
+                             /.col-lg-12 
+                        </div>-->
                         
-                        <div class="row">
+<!--                        <div class="row">
                             <div class="col-lg-12">
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
@@ -373,7 +370,7 @@ $valores = new Valores();
 
                                         <div class="row">
 
-                                            <!-- /.col-lg-6 (nested) -->
+                                             /.col-lg-6 (nested) 
                                             <div class="col-lg-12">
                                                 <div class="col-lg-1">
                                                     <label>Género: </label>
@@ -413,10 +410,10 @@ $valores = new Valores();
                                                 </div>
 
                                             </div>
-                                            <!-- /.col-lg-6 (nested) -->
+                                             /.col-lg-6 (nested) 
                                         </div>
                                         <div class="row separetorTopInput">
-                                            <!-- /.col-lg-6 (nested) -->
+                                             /.col-lg-6 (nested) 
                                             <div class="col-lg-12">
                                                 <div class="col-lg-1">
                                                 <label>No. De hijos: </label>
@@ -431,10 +428,10 @@ $valores = new Valores();
                                                     <input type="text" class="form-control" name="referEmp" >
                                                 </div>
                                             </div>
-                                            <!-- /.col-lg-6 (nested) -->
+                                             /.col-lg-6 (nested) 
                                         </div>
                                         <div class="row separetorTopInput">
-                                            <!-- /.col-lg-6 (nested) -->
+                                             /.col-lg-6 (nested) 
                                             <div class="col-lg-12">
                                                 <div class="col-lg-1">
                                                 <label>Seguro Social: </label>
@@ -469,10 +466,10 @@ $valores = new Valores();
                                                 </div>
                                                 
                                             </div>
-                                            <!-- /.col-lg-6 (nested) -->
+                                             /.col-lg-6 (nested) 
                                         </div>
                                         <div class="row separetorTopInput">
-                                            <!-- /.col-lg-6 (nested) -->
+                                             /.col-lg-6 (nested) 
                                             <div class="col-lg-12">
                                                 <div hidden id="divSS">
                                                     <div class="col-lg-1">    
@@ -500,17 +497,17 @@ $valores = new Valores();
                                                 </div>
                                                 </div>
                                             </div>
-                                            <!-- /.col-lg-6 (nested) -->
+                                             /.col-lg-6 (nested) 
                                         </div>
-                                        <!-- /.row (nested) -->
+                                         /.row (nested) 
                                     </div>
-                                    <!-- /.panel-body -->
+                                     /.panel-body 
                                 </div>
-                                <!-- /.panel -->
+                                 /.panel 
                             </div>
-                            <!-- /.col-lg-12 -->
-                        </div>
-                        <div class="row">
+                             /.col-lg-12 
+                        </div>-->
+<!--                        <div class="row">
                             <div class="col-lg-12">
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
@@ -521,7 +518,7 @@ $valores = new Valores();
 
                                         <div class="row">
 
-                                            <!-- /.col-lg-6 (nested) -->
+                                             /.col-lg-6 (nested) 
                                             <div class="col-lg-12">
                                                 <div class="col-lg-1">
                                                 <label >Servicio: </label>
@@ -539,27 +536,27 @@ $valores = new Valores();
                                                     <input type="date" class="form-control" name="dateIng">
                                                 </div>
                                             </div>
-                                            <!-- /.col-lg-6 (nested) -->
+                                             /.col-lg-6 (nested) 
                                         </div>
-                                        <!--                                    <div class="row separetorTopInput">
+                                                                            <div class="row separetorTopInput">
                                                                                  /.col-lg-6 (nested) 
                                                                                 <div class="col-lg-12">
                                                                                 </div>
                                                                                  /.col-lg-6 (nested) 
-                                                                            </div>-->
+                                                                            </div>
 
 
-                                        <!-- /.row (nested) -->
+                                         /.row (nested) 
 
                                     </div>
 
-                                    <!-- /.panel-body -->
+                                     /.panel-body 
 
                                 </div>
-                                <!-- /.panel -->
+                                 /.panel 
                             </div>
-                            <!-- /.col-lg-12 -->
-                        </div>
+                             /.col-lg-12 
+                        </div>-->
                         <hr>
                         <input type="submit" class="btn btn-default" value="Guardar">
                         <hr>

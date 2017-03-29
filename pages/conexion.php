@@ -10,7 +10,7 @@ $password = "";
     }
     else {
 
-        if (!mysqli_select_db($liga,"prisma_test")) {
+        if (!mysqli_select_db($liga,"interna_solu_test")) {
             
             echo "No se encuentra la Base de datos";
             
