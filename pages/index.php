@@ -60,8 +60,6 @@ $valores = new Valores();
                     </button>
                     <a class="navbar-brand" href="index.html">International ESolutions</a>
                 </div>
-                <!-- /.navbar-header -->
-
                 <ul class="nav navbar-top-links navbar-right">
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
@@ -76,101 +74,17 @@ $valores = new Valores();
                             <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                             </li>
                         </ul>
-                        <!-- /.dropdown-user -->
                     </li>
-                    <!-- /.dropdown -->
                 </ul>
-                <!-- /.navbar-top-links -->
-
                 <div class="navbar-default sidebar" role="navigation">
                     <div class="sidebar-nav navbar-collapse">
                         <ul class="nav" id="side-menu">
-                            <li class="sidebar-search">
-                                <div class="input-group custom-search-form">
-                                    <input type="text" class="form-control" placeholder="Search...">
-                                    <span class="input-group-btn">
-                                        <button class="btn btn-default" type="button">
-                                            <i class="fa fa-search"></i>
-                                        </button>
-                                    </span>
-                                </div>
-                            </li>
                             <li>
                                 <a href="index.php"><i class="glyphicon glyphicon-user fa-fw"></i> Material</a>
                             </li>
                             <li>
                                 <a href="addEmp.php"><i class="glyphicon glyphicon-upload fa-fw"></i> Nuevo Material</a>
                             </li>
-
-<!--                            <li>
-                                <a href="#"><i class="glyphicon glyphicon-file fa-fw"></i>Registra Empleados<span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level">
-                                    <li>
-                                        <a href="panels-wells.php">Ingresa Turnos</a>
-                                    </li>
-                                    <li>
-                                        <a href="buttons.html">Nomina</a>
-                                    </li>
-                                                                        <li>
-                                                                            <a href="#notifications.html">Notifications</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="#typography.html">Typography</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="#icons.html"> Icons</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="#grid.html">Grid</a>
-                                                                        </li>
-                                </ul>
-                                 /.nav-second-level 
-                            </li>-->
-<!--                            <li>
-                                <a href="#"><i class="glyphicon glyphicon-wrench fa-fw"></i>Servicios<span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level">
-                                    <li>
-                                        <a href="addService.php">Alta Servicios</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Provedores</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Third Level <span class="fa arrow"></span></a>
-                                        <ul class="nav nav-third-level">
-                                            <li>
-                                                <a href="#">Third Level Item</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Third Level Item</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Third Level Item</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Third Level Item</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>-->
-                            <!--                            <li>
-                                                            <a href="#tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
-                                                        </li>-->
-                            <!--                            <li>
-                                                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
-                                                            <ul class="nav nav-second-level">
-                                                                <li>
-                                                                    <a href="#blank.html">Blank Page</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#login.html">Login Page</a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>-->
                         </ul>
                     </div>
                 </div>
@@ -179,7 +93,7 @@ $valores = new Valores();
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-8  ">
-                    <h2 class="page-header ">Lista de empleados</h2>
+                    <h2 class="page-header ">Material</h2>
                 </div>
                 <div class="col-lg-4">
                     <?php
@@ -209,12 +123,12 @@ $valores = new Valores();
                                     <thead>
                                         <tr>
                                             <th>CLAVE CCB</th>
-                                            <th>DESCRIPCIÓN</th>
+                                            <th>DESCRIPCIï¿½N</th>
                                             <th>UNIDAD JAYOR</th>
                                             <th>PRICE JAYOR</th>
                                             <th>UNIDAD DEGASA</th>
                                             <th>PRECIO DEGASA</th>
-                                            <th>EDIT</th>
+                                            
                                         </tr>
                                     </thead>
                                     <tbody>

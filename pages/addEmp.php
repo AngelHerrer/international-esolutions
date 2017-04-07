@@ -15,7 +15,7 @@ $valores = new Valores();
         <meta name="author" content="">
 
         <title>SB Admin 2 - Bootstrap Admin Theme</title>
-
+        <link href="../dist/css/base.css" rel="stylesheet" type="text/css"/>
         <!-- Bootstrap Core CSS -->
         <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -96,17 +96,9 @@ $valores = new Valores();
 
                 <div class="navbar-default sidebar" role="navigation">
                     <div class="sidebar-nav navbar-collapse">
-                         <ul class="nav" id="side-menu">
+                        <ul class="nav" id="side-menu">
                             <li class="sidebar-search">
                                 <p>Internal ESolutions</p>
-<!--                                <div class="input-group custom-search-form">
-                                    <input type="text" class="form-control" placeholder="Search...">
-                                    <span class="input-group-btn">
-                                        <button class="btn btn-default" type="button">
-                                            <i class="fa fa-search"></i>
-                                        </button>
-                                    </span>
-                                </div>-->
                             </li>
                             <li>
                                 <a href="index.php"><i class="glyphicon glyphicon-user fa-fw"></i> Material</a>
@@ -114,76 +106,6 @@ $valores = new Valores();
                             <li>
                                 <a href="addEmp.php"><i class="glyphicon glyphicon-upload fa-fw"></i> Nuevo MAterial</a>
                             </li>
-
-<!--                            <li>
-                                <a href="#"><i class="glyphicon glyphicon-file fa-fw"></i>Registra Empleados<span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level">
-                                    <li>
-                                        <a href="panels-wells.php">Ingresa Turnos</a>
-                                    </li>
-                                    <li>
-                                        <a href="buttons.html">Nomina</a>
-                                    </li>
-                                                                        <li>
-                                                                            <a href="#notifications.html">Notifications</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="#typography.html">Typography</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="#icons.html"> Icons</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="#grid.html">Grid</a>
-                                                                        </li>
-                                </ul>
-                                 /.nav-second-level 
-                            </li>
-                            <li>
-                                <a href="#"><i class="glyphicon glyphicon-wrench fa-fw"></i>Servicios<span class="fa arrow"></span></a>
-                                <ul class="nav nav-second-level">
-                                    <li>
-                                        <a href="addService.php">Alta Servicios</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Provedores</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Third Level <span class="fa arrow"></span></a>
-                                        <ul class="nav nav-third-level">
-                                            <li>
-                                                <a href="#">Third Level Item</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Third Level Item</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Third Level Item</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">Third Level Item</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>-->
-                            <!--                            <li>
-                                                            <a href="#tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
-                                                        </li>-->
-                            <!--                            <li>
-                                                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
-                                                            <ul class="nav nav-second-level">
-                                                                <li>
-                                                                    <a href="#blank.html">Blank Page</a>
-                                                                </li>
-                                                                <li>
-                                                                    <a href="#login.html">Login Page</a>
-                                                                </li>
-                                                            </ul>
-                                                        </li>-->
                         </ul>
                     </div>
                 </div>
@@ -218,23 +140,17 @@ $valores = new Valores();
                                     <div class="row">
                                         <!-- /.col-lg-6 (nested) -->
                                         <div class="col-lg-12">
-                                            <div class="col-lg-1">
+                                            <div class="col-lg-2">
                                                 <label>Clave CCB: </label>
                                             </div>
                                             <div class="form-group col-lg-3">
                                                 <input type="text" class="form-control" name="claveCbb">
                                             </div>
                                             <div class="col-lg-1">
-                                                <label>Descripción: </label>
+                                                <label>Descripcion: </label>
                                             </div>
                                             <div class="form-group col-lg-3">
                                                 <input type="text" class="form-control" name="descripcion" >
-                                            </div>
-                                            <div class="col-lg-1">
-                                            <label>Unidad jayor: </label>
-                                            </div>
-                                            <div class="form-group col-lg-3">
-                                                <input type="text" class="form-control" name="unitiJayor" >
                                             </div>
                                         </div>
                                         <!-- /.col-lg-6 (nested) -->
@@ -242,28 +158,32 @@ $valores = new Valores();
                                     <div class="row separetorTopInput">
                                         <!-- /.col-lg-6 (nested) -->
                                         <div class="col-lg-12">
-                                            <div class="col-lg-1">  
-                                            <label>Precio jayor: </label>
+                                            <div class="form-group col-lg-3">
+                                                <label>Unidad jayor: </label>
+                                                <input type="text" class="form-control" name="unitiJayor" >
                                             </div>
                                             <div class="form-group col-lg-3">
+                                                <label>Precio jayor: </label>
                                                 <input type="text" class="form-control" name="priceJayor" >
                                             </div>
-                                            <div class="col-lg-1">
-                                            <label>Unidad de gasa: </label>
-                                            </div>
                                             <div class="form-group col-lg-3">
+                                                <label>Unidad de gasa: </label>
                                                 <input type="text" class="form-control" name="unitiGasa" >
                                             </div>
-                                            <div class="col-lg-1">
-                                            <label>Precio de gasa: </label>
-                                            </div>
                                             <div class="form-group col-lg-3">
+                                                <label>Precio de gasa: </label>
                                                 <input  type="text" class="form-control" name="priceGasa">
                                             </div>
                                         </div>
+
                                         <!-- /.col-lg-6 (nested) -->
+
                                     </div>
-                                    
+                                    <div class="col-md-12  m-md-t-2">
+                                        <div class="col-md-1 col-md-offset-11">
+                                            <input type="submit" class="btn btn-primary" value="Guardar">
+                                        </div>
+                                    </div>
                                     <!-- /.row (nested) -->
                                 </div>
                                 <!-- /.panel-body -->
@@ -271,317 +191,33 @@ $valores = new Valores();
                             <!-- /.panel -->
                         </div>
                         <!-- /.col-lg-12 -->
+
                     </div>
 
-<!--                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    Datos de dirección del empleado
-                                </div>
-
-                                <div class="panel-body">
-                                    <div class="row">
-
-                                         /.col-lg-6 (nested) 
-                                        <div class="col-lg-12">
-                                            <div class="col-lg-1">    
-                                                <label>Calle /#: </label>
-                                            </div>
-                                            <div class="form-group col-lg-3">
-                                                <input type="text" class="form-control" name="avenEmp" >
-                                            </div>
-                                            <div class="col-lg-1">
-                                                <label>Colonia: </label>
-                                            </div>
-                                            <div class="form-group col-lg-3">
-                                                <input type="text" class="form-control" name="colonyEmp" >
-                                            </div>
-                                            <div class="col-lg-1">
-                                                <label>Código Postal: </label>
-                                            </div>
-                                            <div class="form-group col-lg-3">
-                                                <input type="text" class="form-control" name="postalEmp"  SIZE=10 MAXLENGTH=5 >
-                                            </div>
-                                            
-                                        </div>
-                                         /.col-lg-6 (nested) 
-                                    </div>
-                                    <div class="row separetorTopInput">
-
-                                         /.col-lg-6 (nested) 
-                                        <div class="col-lg-12">
-                                            <div class="col-lg-1">
-                                                <label>Estado: </label>
-                                            </div>
-                                            <div class="form-group col-lg-3">
-                                                <select class="form-control" name="state" id="marca">
-                                                    <option>-----------------</option>
-                                                    <?php $valores->allState(); ?>
-                                                </select>
-
-                                            </div>
-                                            <div class="col-lg-1">
-                                                <label>Municipio: </label>
-                                            </div>
-                                            <div class="form-group col-lg-3" id="result">
-                                                <select class="form-control" name="delegaEmp" id="modelo">
-                                                    <option>--------------------</option>
-                                                </select>
-                                            </div>
-                                            
-                                             /.col-lg-6 (nested) 
-                                        </div>
-                                    </div>
-                                        <div class="row separetorTopInput">
-                                             /.col-lg-6 (nested) 
-                                            <div class="col-lg-12">
-                                                <div class="col-lg-1">
-                                                    <label>Teléfono: </label>
-                                                </div>
-                                                <div class="form-group col-lg-3">
-                                                    <input type="number" class="form-control" name="phoneOne" >
-                                                </div>
-                                                <div class="col-lg-1">
-                                                <label>Teléfono 2: </label>
-                                                </div>
-                                                <div class="form-group col-lg-3">
-                                                    <input type="number" class="form-control" name="phoneTwo" >
-                                                </div>
-                                            </div>
-                                             /.col-lg-6 (nested) 
-                                        </div>
-                                    </div>
-                                     /.panel-body 
-                                </div>
-                                 /.panel 
-                            </div>
-                             /.col-lg-12 
-                        </div>-->
-                        
-<!--                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        Datos civiles del empleado
-                                    </div>
-
-                                    <div class="panel-body">
-
-                                        <div class="row">
-
-                                             /.col-lg-6 (nested) 
-                                            <div class="col-lg-12">
-                                                <div class="col-lg-1">
-                                                    <label>Género: </label>
-                                                </div>
-                                                <div class="form-group col-lg-3">
-                                                    <select class="form-control" name="genderEmp">
-                                                        <option>-----------</option>
-                                                        <option>F</option>
-                                                        <option>M</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-lg-1">
-                                                <label>Estado civil: </label>
-                                                </div>
-                                                <div class="form-group col-lg-3">
-                                                    <select class="form-control" name="civilEmp">
-                                                        <option>---------------------</option>
-                                                        <option>Soltero / a</option>
-                                                        <option>Casado / a</option>
-                                                        <option>Viudo / a</option>
-                                                        <option>Divorciado / a</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-lg-1">
-                                                <label>Escola ridad: </label>
-                                                </div>
-                                                <div class="form-group col-lg-3">
-                                                    <select class="form-control" name="schoolEmp">
-                                                        <option>-----------------</option>
-                                                        <option>Primaria</option>
-                                                        <option>Secundaria</option>
-                                                        <option>Preparatoria o bachillerato</option>
-                                                        <option>Licenciatura</option>
-                                                        <option>Posgrado</option>
-
-                                                    </select>
-                                                </div>
-
-                                            </div>
-                                             /.col-lg-6 (nested) 
-                                        </div>
-                                        <div class="row separetorTopInput">
-                                             /.col-lg-6 (nested) 
-                                            <div class="col-lg-12">
-                                                <div class="col-lg-1">
-                                                <label>No. De hijos: </label>
-                                                </div>
-                                                <div class="form-group col-lg-3">
-                                                    <input type="number" class="form-control" name="chilEmp" >
-                                                </div>
-                                                <div class="col-lg-1">
-                                                <label>Referencia: </label>
-                                                </div>
-                                                <div class="form-group col-lg-3">
-                                                    <input type="text" class="form-control" name="referEmp" >
-                                                </div>
-                                            </div>
-                                             /.col-lg-6 (nested) 
-                                        </div>
-                                        <div class="row separetorTopInput">
-                                             /.col-lg-6 (nested) 
-                                            <div class="col-lg-12">
-                                                <div class="col-lg-1">
-                                                <label>Seguro Social: </label>
-                                                </div>
-                                                <div class="form-group col-lg-3">
-                                                    <select class="form-control active-div-ss" name="socialEmp">
-                                                        <option>---</option>
-                                                        <option value="1">Si</option>
-                                                        <option value="0">No</option>
-                                                        <option value="pen">Pensionado</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-lg-1">
-                                                <label >INFONAVIT </label>
-                                                </div>
-                                                <div class="form-group col-lg-3">
-                                                    <select class="form-control active-div-in" name="infonaEmp">
-                                                        <option>---</option>
-                                                        <option value="1">Si</option>
-                                                        <option value="0">No</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-lg-1">
-                                                <label>Cuenta bancaria: </label>
-                                                </div>
-                                                <div class="form-group col-lg-3">
-                                                    <select class="form-control active-div-cb" name="cbEmp">
-                                                        <option>---</option>
-                                                        <option value="1">Si</option>
-                                                        <option value="0">No</option>
-                                                    </select>
-                                                </div>
-                                                
-                                            </div>
-                                             /.col-lg-6 (nested) 
-                                        </div>
-                                        <div class="row separetorTopInput">
-                                             /.col-lg-6 (nested) 
-                                            <div class="col-lg-12">
-                                                <div hidden id="divSS">
-                                                    <div class="col-lg-1">    
-                                                <label>No. de Seguro Social: </label>
-                                                </div>
-                                                <div class="form-group col-lg-3">
-                                                    <input type="text" class="form-control" name="socialNum"/>
-                                                </div>
-                                                </div>
-                                                <div hidden id="divInf">
-                                                    <div class="col-lg-1">
-                                                <label>No. de INFONAVIT: </label>
-                                                </div>
-                                                <div class="form-group col-lg-3">
-                                                    <input type="text" class="form-control" name="infonaNum"/>
-                                                </div>
-                                                </div>
-                                                
-                                                <div hidden id="divCban">
-                                                    <div class="col-lg-1">
-                                                <label >No. de cuenta bancaria: </label>
-                                                </div>
-                                                <div class="form-group col-lg-3">
-                                                    <input type="text" class="form-control" name="cbNum"/>
-                                                </div>
-                                                </div>
-                                            </div>
-                                             /.col-lg-6 (nested) 
-                                        </div>
-                                         /.row (nested) 
-                                    </div>
-                                     /.panel-body 
-                                </div>
-                                 /.panel 
-                            </div>
-                             /.col-lg-12 
-                        </div>-->
-<!--                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        Datos laborales del empleado
-                                    </div>
-
-                                    <div class="panel-body">
-
-                                        <div class="row">
-
-                                             /.col-lg-6 (nested) 
-                                            <div class="col-lg-12">
-                                                <div class="col-lg-1">
-                                                <label >Servicio: </label>
-                                                </div>
-                                                <div class="form-group col-lg-3">
-                                                    <select class="form-control" name="servEmp">
-                                                        <option value="0">---</option>
-                                                        <?php $valores->getServices(); ?> 
-                                                    </select>
-                                                </div>
-                                                <div class="col-lg-1">
-                                                <label>Fecha de ingreso: </label>
-                                                </div>
-                                                <div class="form-group col-lg-3">
-                                                    <input type="date" class="form-control" name="dateIng">
-                                                </div>
-                                            </div>
-                                             /.col-lg-6 (nested) 
-                                        </div>
-                                                                            <div class="row separetorTopInput">
-                                                                                 /.col-lg-6 (nested) 
-                                                                                <div class="col-lg-12">
-                                                                                </div>
-                                                                                 /.col-lg-6 (nested) 
-                                                                            </div>
 
 
-                                         /.row (nested) 
 
-                                    </div>
-
-                                     /.panel-body 
-
-                                </div>
-                                 /.panel 
-                            </div>
-                             /.col-lg-12 
-                        </div>-->
-                        <hr>
-                        <input type="submit" class="btn btn-default" value="Guardar">
-                        <hr>
-
-                        <!-- /.row -->
-                    </div>
-                </form>
-                <!-- /#page-wrapper -->
-
+                    <!-- /.row -->
             </div>
-        </div>
-        <!-- /#wrapper -->
+        </form>
+        <!-- /#page-wrapper -->
 
-        <!-- jQuery -->
-        <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    </div>
+</div>
+<!-- /#wrapper -->
 
-        <!-- Bootstrap Core JavaScript -->
-        <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- jQuery -->
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
 
-        <!-- Metis Menu Plugin JavaScript -->
-        <script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-        <!-- Custom Theme JavaScript -->
-        <script src="../dist/js/sb-admin-2.js"></script>
-        <script type="text/javascript">
+<!-- Metis Menu Plugin JavaScript -->
+<script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="../dist/js/sb-admin-2.js"></script>
+<script type="text/javascript">
             $(document).ready(function () {
                 $("#marca").change(function () {
                     $.ajax({
@@ -594,48 +230,48 @@ $valores = new Valores();
                     })
                 });
             });
-        </script>
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $(".active-div-cb").change(function () {
-                    var val = $('.active-div-cb').val();
-                    console.log(val);
-                    if(val === '1'){
-                        $('#divCban').show();
-                    }else{
-                        $('#divCban').hide();
-                    }
-                });
-            });
-        </script>
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $(".active-div-in").change(function () {
-                    var val = $('.active-div-in').val();
-                    console.log(val);
-                    if(val === '1'){
-                        $('#divInf').show();
-                    }else{
-                        $('#divInf').hide();
-                    }
-                });
-            });
-        </script>
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $(".active-div-ss").change(function () {
-                    var val = $('.active-div-ss').val();
-                    console.log(val);
-                    if(val === '1'){
-                        $('#divSS').show();
-                    }else{
-                        $('#divSS').hide();
-                    }
-                });
-            });
-        </script>
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".active-div-cb").change(function () {
+            var val = $('.active-div-cb').val();
+            console.log(val);
+            if (val === '1') {
+                $('#divCban').show();
+            } else {
+                $('#divCban').hide();
+            }
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".active-div-in").change(function () {
+            var val = $('.active-div-in').val();
+            console.log(val);
+            if (val === '1') {
+                $('#divInf').show();
+            } else {
+                $('#divInf').hide();
+            }
+        });
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".active-div-ss").change(function () {
+            var val = $('.active-div-ss').val();
+            console.log(val);
+            if (val === '1') {
+                $('#divSS').show();
+            } else {
+                $('#divSS').hide();
+            }
+        });
+    });
+</script>
 
-    </body>
+</body>
 
 </html>
 

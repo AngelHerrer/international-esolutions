@@ -244,9 +244,20 @@ class Valores {
             $priceEmp = $row['pric_emp1'];
             $unidEmpTwo = $row['unid_emp2'];
             $priceEmpTwo = $row['pric_emp2'];
-            echo '<tr><td>' . $idMat . '</td><td>' . $descMat . '</td><td>' . $unidEmp . '</td><td>' . $priceEmp . '</td><td>' . $unidEmpTwo . '</td><td>'.$priceEmpTwo.'</td><td align="center"><a href="getEmpleado.php?idEmp=' . $idEmp . '"><span style="margin-left:10px;" class="glyphicon glyphicon-eye-open"></span></a></td></tr>';
+            echo '<tr><td>' . $idMat . '</td><td>' . $descMat . '</td><td>' . $unidEmp . '</td><td>' . $priceEmp . '</td><td>' . $unidEmpTwo . '</td><td>'.$priceEmpTwo.'</td></tr>';
+            //<td align="center"><a href="getEmpleado.php?idEmp=' . $idEmp . '"><span style="margin-left:10px;" class="glyphicon glyphicon-eye-open"></span></a></td>
         }
         
+    }
+        function saveEmployee($claveCbb, $descripcion, $unitiJayor, $priceJayor, $unitiGasa, $priceGasa) {
+        include 'conexion.php';
+        $query = "INSERT INTO material VALUES ('$claveCbb','$descripcion','$unitiJayor','$priceJayor','$unitiGasa','$priceGasa')";
+        echo $query;
+        if($result = mysqli_query($liga, $query)){
+          echo '<script type="text/javascript">';
+          echo 'window.location.href="addEmp.php?succes=ok";';
+          echo '</script>';
+        }
     }
 }
 ?>
