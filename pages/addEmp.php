@@ -55,13 +55,8 @@ $valores = new Valores();
             margin-top: 25px;
         }
     </style>
-
-
     <body>
-
         <div id="wrapper">
-
-            <!-- Navigation -->
             <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -72,8 +67,6 @@ $valores = new Valores();
                     </button>
                     <a class="navbar-brand" href="index.php">International ESolutions</a>
                 </div>
-                <!-- /.navbar-header -->
-
                 <ul class="nav navbar-top-links navbar-right">
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
@@ -146,78 +139,121 @@ $valores = new Valores();
                                             <div class="form-group col-lg-3">
                                                 <input type="text" class="form-control" name="claveCbb">
                                             </div>
-                                            <div class="col-lg-1">
+                                            <div class="col-lg-2">
                                                 <label>Descripcion: </label>
                                             </div>
                                             <div class="form-group col-lg-3">
                                                 <input type="text" class="form-control" name="descripcion" >
                                             </div>
                                         </div>
-                                        <!-- /.col-lg-6 (nested) -->
+                                        <div class="col-lg-12 m-md-t-2">
+                                            <div class="col-lg-2">
+                                                <label>Marca: </label>
+                                            </div>
+                                            <div class="form-group col-lg-3">
+                                                <input type="text" class="form-control" name="marca" >
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <label>Empresa: </label>
+                                            </div>
+                                            <div class="form-group col-lg-3">
+                                                <select class="col-md-9" name="empresa">
+                                                    <option value="1">---</option>>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 m-md-t-2">
+                                            <div class="col-lg-2">
+                                                <label>Precio: </label>
+                                            </div>
+                                            <div class="form-group col-lg-3">
+                                                <input type="text" class="form-control" name="precio" >
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <label>Precio Unitario: </label>
+                                            </div>
+                                            <div class="form-group col-lg-3">
+                                                <input type="text" class="form-control" name="preciou">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 m-md-t-2">
+                                            <div class="col-lg-2">
+                                                <label>Precio Venta: </label>
+                                            </div>
+                                            <div class="form-group col-lg-3">
+                                                <input type="text" class="form-control" name="preciov">
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <label>Gr. Contenido Nacional: </label>
+                                            </div>
+                                            <div class="form-group col-lg-3">
+                                                <input type="text" class="form-control" name="grcn">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 m-md-t-2">
+                                            <div class="col-lg-2">
+                                                <label>Presentación: </label>
+                                            </div>
+                                            <div class="form-group col-lg-3">
+                                                <input type="text" class="form-control" name="presentacion">
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <label>Pais de Origen: </label>
+                                            </div>
+                                            <div class="form-group col-lg-3">
+                                                <input type="text" class="form-control" name="porigen">
+                                            </div> 
+                                        </div>
+                                        <div class="col-lg-12 m-md-t-2">
+                                            <div class="col-lg-2">
+                                                <label>Fecha de Vencimiento: </label>
+                                            </div>
+                                            <div class="form-group col-lg-3">
+                                                <input type="date" class="form-control" name="fechve">
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <label>Observaciones: </label>
+                                            </div>
+                                            <div class="form-group col-lg-3">
+                                                <textarea style="width: 73%;" name="obse"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 m-md-t-2">
+                                            <div class="col-lg-2">
+                                                <label>Registro Sanitario: </label>
+                                            </div>
+                                            <div class="form-group col-lg-4">
+                                                <input type="file" class="form-control" name="rsani" >
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 m-md-t-2">
+                                            <div class="col-lg-2">
+                                                <label>Catalogo(ficha tecnica): </label>
+                                            </div>
+                                            <div class="form-group col-lg-4">
+                                                <input type="file" class="form-control" name="catft" >
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="row separetorTopInput">
-                                        <!-- /.col-lg-6 (nested) -->
-                                        <div class="col-lg-12">
-                                            <div class="form-group col-lg-3">
-                                                <label>Unidad jayor: </label>
-                                                <input type="text" class="form-control" name="unitiJayor" >
-                                            </div>
-                                            <div class="form-group col-lg-3">
-                                                <label>Precio jayor: </label>
-                                                <input type="text" class="form-control" name="priceJayor" >
-                                            </div>
-                                            <div class="form-group col-lg-3">
-                                                <label>Unidad de gasa: </label>
-                                                <input type="text" class="form-control" name="unitiGasa" >
-                                            </div>
-                                            <div class="form-group col-lg-3">
-                                                <label>Precio de gasa: </label>
-                                                <input  type="text" class="form-control" name="priceGasa">
+                                        <div class="col-md-12  m-md-t-2">
+                                            <div class="col-md-1 col-md-offset-11">
+                                                <input type="submit" class="btn btn-primary" value="Guardar">
                                             </div>
                                         </div>
-
-                                        <!-- /.col-lg-6 (nested) -->
-
                                     </div>
-                                    <div class="col-md-12  m-md-t-2">
-                                        <div class="col-md-1 col-md-offset-11">
-                                            <input type="submit" class="btn btn-primary" value="Guardar">
-                                        </div>
-                                    </div>
-                                    <!-- /.row (nested) -->
                                 </div>
-                                <!-- /.panel-body -->
                             </div>
-                            <!-- /.panel -->
                         </div>
-                        <!-- /.col-lg-12 -->
-
                     </div>
-
-
-
-
-                    <!-- /.row -->
+                </form>
             </div>
-        </form>
-        <!-- /#page-wrapper -->
-
-    </div>
-</div>
-<!-- /#wrapper -->
-
-<!-- jQuery -->
-<script src="../bower_components/jquery/dist/jquery.min.js"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
-<!-- Metis Menu Plugin JavaScript -->
-<script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
-
-<!-- Custom Theme JavaScript -->
-<script src="../dist/js/sb-admin-2.js"></script>
-<script type="text/javascript">
+        </div>
+        <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+        <script src="../dist/js/sb-admin-2.js"></script>
+        <script type="text/javascript">
             $(document).ready(function () {
                 $("#marca").change(function () {
                     $.ajax({
@@ -230,48 +266,48 @@ $valores = new Valores();
                     })
                 });
             });
-</script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $(".active-div-cb").change(function () {
-            var val = $('.active-div-cb').val();
-            console.log(val);
-            if (val === '1') {
-                $('#divCban').show();
-            } else {
-                $('#divCban').hide();
-            }
-        });
-    });
-</script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $(".active-div-in").change(function () {
-            var val = $('.active-div-in').val();
-            console.log(val);
-            if (val === '1') {
-                $('#divInf').show();
-            } else {
-                $('#divInf').hide();
-            }
-        });
-    });
-</script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $(".active-div-ss").change(function () {
-            var val = $('.active-div-ss').val();
-            console.log(val);
-            if (val === '1') {
-                $('#divSS').show();
-            } else {
-                $('#divSS').hide();
-            }
-        });
-    });
-</script>
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".active-div-cb").change(function () {
+                    var val = $('.active-div-cb').val();
+                    console.log(val);
+                    if (val === '1') {
+                        $('#divCban').show();
+                    } else {
+                        $('#divCban').hide();
+                    }
+                });
+            });
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".active-div-in").change(function () {
+                    var val = $('.active-div-in').val();
+                    console.log(val);
+                    if (val === '1') {
+                        $('#divInf').show();
+                    } else {
+                        $('#divInf').hide();
+                    }
+                });
+            });
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".active-div-ss").change(function () {
+                    var val = $('.active-div-ss').val();
+                    console.log(val);
+                    if (val === '1') {
+                        $('#divSS').show();
+                    } else {
+                        $('#divSS').hide();
+                    }
+                });
+            });
+        </script>
 
-</body>
+    </body>
 
 </html>
 

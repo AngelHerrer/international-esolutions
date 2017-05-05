@@ -23,7 +23,7 @@ $valores = new Valores();
         <link href="../dist/css/base.css" rel="stylesheet" type="text/css"/>
         <!-- MetisMenu CSS -->
         <link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
-
+        <script src="../bower_components/bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>
         <!-- Timeline CSS -->
         <link href="../dist/css/timeline.css" rel="stylesheet">
 
@@ -123,12 +123,11 @@ $valores = new Valores();
                                     <thead>
                                         <tr>
                                             <th>CLAVE CCB</th>
-                                            <th>DESCRIPCI�N</th>
-                                            <th>UNIDAD JAYOR</th>
-                                            <th>PRICE JAYOR</th>
-                                            <th>UNIDAD DEGASA</th>
-                                            <th>PRECIO DEGASA</th>
-                                            
+                                            <th>DESCRIPCION</th>
+                                            <th>MARCA</th>
+                                            <th>EMPRESA</th>
+                                            <th>PRESENTACION</th>
+                                            <th>PRECIO</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -145,6 +144,32 @@ $valores = new Valores();
             </div>
         </div>
     </div>
+        <div class="container">
+  <!-- Trigger the modal with a button -->
+  <a href="#" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</a>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <?php $valores->desc_mat($id_mat); ?>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
             <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
             <!-- Metis Menu Plugin JavaScript -->

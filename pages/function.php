@@ -238,27 +238,62 @@ class Valores {
         $query = "select * from material";
         $result = mysqli_query($liga, $query);
         while ($row = mysqli_fetch_array($result)) {
-            $idMat = $row['id_mat'];
-            $descMat = $row['desc_mat'];
-            $unidEmp = $row['unid_emp1'];
-            $priceEmp = $row['pric_emp1'];
-            $unidEmpTwo = $row['unid_emp2'];
-            $priceEmpTwo = $row['pric_emp2'];
-            echo '<tr><td>' . $idMat . '</td><td>' . $descMat . '</td><td>' . $unidEmp . '</td><td>' . $priceEmp . '</td><td>' . $unidEmpTwo . '</td><td>'.$priceEmpTwo.'</td></tr>';
+            $claveCbb = $row['id_mat'];
+            $descripcion = $row['desc_mat'];
+            $marca = $row['marc_mat'];
+            $empresa = $row['id_empr'];
+            $precio = $row['prcio_mat'];
+            $preciou = $row['priciou_mat'];
+            $preciov = $row['priciov_mat'];
+            $grcn = $row['grcn_mat'];
+            $presentacion = $row['prese_mat'];
+            $porigen = $row['id_pais'];
+            $fechve = $row['fechve_mat'];
+            $obse = $row['obse_mat'];
+            $rsani = $row['rsani_mat'];
+            $catft = $row['catft_mat'];
+
+            echo '<tr><td><a href="descripcion.php?id_mat=' . $claveCbb . '">' . $claveCbb . '</a></td><td>' . $descripcion . '</td><td>' . $marca . '</td><td>' . $empresa . '</td><td>' . $presentacion . '</td><td>' . $precio . '</td></tr>';
             //<td align="center"><a href="getEmpleado.php?idEmp=' . $idEmp . '"><span style="margin-left:10px;" class="glyphicon glyphicon-eye-open"></span></a></td>
         }
-        
     }
-        function saveEmployee($claveCbb, $descripcion, $unitiJayor, $priceJayor, $unitiGasa, $priceGasa) {
+
+    function saveEmployee($claveCbb, $descripcion, $marca, $empresa, $precio, $preciou, $preciov, $grcn, $presentacion, $porigen, $fechve, $obse, $rsani, $catft) {
         include 'conexion.php';
-        $query = "INSERT INTO material VALUES ('$claveCbb','$descripcion','$unitiJayor','$priceJayor','$unitiGasa','$priceGasa')";
+        $query = "INSERT INTO material VALUES ('$claveCbb','$descripcion','$marca',$empresa,$precio,$preciou,$preciov,'$grcn','$presentacion',$porigen,'$fechve','$obse','$rsani','$catft')";
         echo $query;
-        if($result = mysqli_query($liga, $query)){
-          echo '<script type="text/javascript">';
-          echo 'window.location.href="addEmp.php?succes=ok";';
-          echo '</script>';
+        if ($result = mysqli_query($liga, $query)) {
+            echo '<script type="text/javascript">';
+            echo 'window.location.href="addEmp.php?succes=ok";';
+            echo '</script>';
         }
     }
+    
+    function desc_mat ($id_mat){
+        include 'conexion.php';
+        $query = "select * from material where id_mat=".$id_mat;
+        $result = mysqli_query($liga, $query);
+        while ($row = mysqli_fetch_array($result)) {
+            $claveCbb = $row['id_mat'];
+            $descripcion = $row['desc_mat'];
+            $marca = $row['marc_mat'];
+            $empresa = $row['id_empr'];
+            $precio = $row['prcio_mat'];
+            $preciou = $row['priciou_mat'];
+            $preciov = $row['priciov_mat'];
+            $grcn = $row['grcn_mat'];
+            $presentacion = $row['prese_mat'];
+            $porigen = $row['id_pais'];
+            $fechve = $row['fechve_mat'];
+            $obse = $row['obse_mat'];
+            $rsani = $row['rsani_mat'];
+            $catft = $row['catft_mat'];
+            
+//            echo '<table><tr><td>' . $claveCbb . '</td><td>' . $descripcion . '</td><td>' . $marca . '</td><td>' . $empresa . '</td><td>' . $presentacion . '</td><td>' . $precio . '</td></tr></table>';
+            echo $claveCbb.'<br>'.$descripcion.'<br>'.$marca.'<br>'.$empresa.'<br>'.$precio.'<br>'.$preciou.'<br>'.$preciov.'<br>'.$grcn.'<br>'.$presentacion.'<br>'.$porigen.'<br>'.$fechve.'<br>'.$obse.'<br>'.$rsani.'<br>'.$catft;
+        }
+    }
+
 }
 ?>
 

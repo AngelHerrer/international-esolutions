@@ -3,20 +3,9 @@ error_reporting(E_ALL ^ E_NOTICE);
 include 'function.php';
 $valores = new Valores();
 extract($_REQUEST);
-
-if(empty($unitiGasa)){
-    $unitiGasa='';
-}
-if(empty($priceGasa)){
-    $priceGasa='';
-}
-if(empty($unitiJayor)){
-    $unitiJayor='';
-}
-if(empty($priceJayor)){
-    $priceJayor='';
-}
-$valores->saveEmployee($claveCbb, $descripcion, $unitiJayor, $priceJayor, $unitiGasa, $priceGasa);
+echo $claveCbb.'<br>'.$descripcion.'<br>'.$marca.'<br>'.$empresa.'<br>'.$precio.'<br>'.$preciou.'<br>'.$preciov.'<br>'.$grcn.'<br>'.$presentacion.'<br>'.$porigen.'<br>'.$fechve.'<br>'.$obse.'<br>'.$rsani.'<br>'.$catft;
+die();
+$valores->saveEmployee($claveCbb, $descripcion, $marca, $empresa, $precio, $preciou,$preciov,$grcn,$presentacion,$porigen,$fechve,$obse,$rsani,$catft);
   
 ?>
 
