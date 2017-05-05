@@ -294,6 +294,23 @@ class Valores {
         }
     }
 
+    
+    function saveCompany($nameComp, $telComp, $mailComp, $rfcComp, $dirComp, $cuentComp, $bancoComp, $contactComp){
+        include 'conexion.php';
+        $query = "INSERT INTO empresas (name_empre,tel_empre,mail_empre,rfc_empre,dir_empre,cuenta_empre,banco_empre,contact_empre) VALUES ('$nameComp','$telComp','$mailComp','$rfcComp','$dirComp','$cuentComp','$bancoComp','$contactComp')";
+        
+        if($result = mysqli_query($liga, $query)){
+          echo '<script type="text/javascript">';
+          echo 'window.location.href="addComp.php?succes=ok";';
+          echo '</script>';
+        }else{
+          echo '<script type="text/javascript">';
+          echo 'window.location.href="addComp.php?succes=false";';
+          echo '</script>';  
+        }
+        
+    }
+
 }
 ?>
 
