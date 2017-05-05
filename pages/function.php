@@ -310,6 +310,58 @@ class Valores {
         }
         
     }
+    
+    function getCompanyAll(){
+        include 'conexion.php';
+        $query = "select * from empresas";
+        $result = mysqli_query($liga, $query);
+        while ($row = mysqli_fetch_array($result)) {
+            $nameCompany = $row['name_empre'];
+            $telCompany = $row['tel_empre'];
+            $mailCompany = $row['mail_empre'];
+            $rfcCompany = $row['rfc_empre'];
+            $dirCompany = $row['dir_empre'];
+            $cuentaCompany = $row['cuenta_empre'];
+            $bancoCompany = $row['banco_empre'];
+            $contactCompany = $row['contact_empre'];
+            $idCompany = $row['id_empresas'];
+
+            echo '<tr><td>' . $nameCompany . '</td><td>' . $telCompany . '</td><td>' . $mailCompany . '</td><td>' . $rfcCompany . '</td><td>' . $dirCompany . '</td><td>' . $cuentaCompany . '</td><td>'.$bancoCompany.'</td><td>'.$contactCompany.'</td><td><a href="editCompany.php?id_comp='.$idCompany.'">'.Editar.'</a></td></tr>';
+            //<td align="center"><a href="getEmpleado.php?idEmp=' . $idEmp . '"><span style="margin-left:10px;" class="glyphicon glyphicon-eye-open"></span></a></td>
+        }
+    }
+    
+    function getCompany($id_comp){
+        include 'conexion.php';
+        $query = 'select * from empresas where id_empresas='.$id_comp;
+        $result = mysqli_query($liga, $query);
+        while ($row = mysqli_fetch_array($result)) {
+            $nameCompany = $row['name_empre'];
+            $telCompany = $row['tel_empre'];
+            $mailCompany = $row['mail_empre'];
+            $rfcCompany = $row['rfc_empre'];
+            $dirCompany = $row['dir_empre'];
+            $cuentaCompany = $row['cuenta_empre'];
+            $bancoCompany = $row['banco_empre'];
+            $contactCompany = $row['contact_empre'];
+            $idCompany = $row['id_empresas'];
+            
+
+            //echo $nameCompany.'<br>'.$telCompany.'<br>'.$mailCompany.'<br>'.$rfcCompany.'<br>'.$dirCompany.'<br>'.$cuentaCompany.'<br>'.$bancoCompany.'<br>'.$contactCompany;
+            return array($nameCompany,$telCompany,$mailCompany,$rfcCompany,$dirCompany,$cuentaCompany,$bancoCompany,$contactCompany,$idCompany);
+        }
+    }
+    
+        function updateCompany($telCompany,$mailCompany,$rfcCompany,$dirCompany,$cuentaCompany,$bancoCompany,$contactCompany,$idCompany) {
+        include 'conexion.php';
+        $query = "UPDATE `empresas` SET `tel_empre`='$telCompany',`mail_empre`='$mailCompany',"
+                . "`rfc_empre`='$rfcCompany',`dir_empre`='$dirCompany',`cuenta_empre`='$cuentaCompany',`banco_empre`='$bancoCompany',"
+                . "`contact_empre`='$contactCompany' WHERE `id_empresas`=$idCompany";
+
+       
+        $result = mysqli_query($liga, $query) or die("<script>window.location.href='index.php?edit=no';</script>");
+        
+    }
 
 }
 ?>
