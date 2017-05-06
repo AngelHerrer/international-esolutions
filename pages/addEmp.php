@@ -158,7 +158,8 @@ $valores = new Valores();
                                             </div>
                                             <div class="form-group col-lg-3">
                                                 <select class="col-md-9" name="empresa">
-                                                    <option value="1">---</option>>
+                                                    <option value="1">---</option>
+                                                    <?php $valores->getCompanySelect(); ?>
                                                 </select>
                                             </div>
                                         </div>

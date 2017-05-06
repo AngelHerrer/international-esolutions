@@ -2,7 +2,7 @@
 
 $servidor = "localhost";
 $usuario = "root";
-$password = "root";
+$password = "";
 
     if (!$liga = mysqli_connect($servidor,$usuario,$password)) {
         echo "No se encuentra el Servidor";
@@ -10,7 +10,7 @@ $password = "root";
     }
     else {
 
-        if (!mysqli_select_db($liga,"IESolutions")) {
+        if (!mysqli_select_db($liga,"interna_solutions")) {
             
             echo "No se encuentra la Base de datos";
             

@@ -290,7 +290,8 @@ class Valores {
             $catft = $row['catft_mat'];
             
 //            echo '<table><tr><td>' . $claveCbb . '</td><td>' . $descripcion . '</td><td>' . $marca . '</td><td>' . $empresa . '</td><td>' . $presentacion . '</td><td>' . $precio . '</td></tr></table>';
-            echo $claveCbb.'<br>'.$descripcion.'<br>'.$marca.'<br>'.$empresa.'<br>'.$precio.'<br>'.$preciou.'<br>'.$preciov.'<br>'.$grcn.'<br>'.$presentacion.'<br>'.$porigen.'<br>'.$fechve.'<br>'.$obse.'<br>'.$rsani.'<br>'.$catft;
+            //echo $claveCbb.'<br>'.$descripcion.'<br>'.$marca.'<br>'.$empresa.'<br>'.$precio.'<br>'.$preciou.'<br>'.$preciov.'<br>'.$grcn.'<br>'.$presentacion.'<br>'.$porigen.'<br>'.$fechve.'<br>'.$obse.'<br>'.$rsani.'<br>'.$catft;
+            return array($claveCbb,$descripcion,$marca,$empresa,$precio,$preciou,$preciov,$grcn,$presentacion,$porigen,$fechve,$obse,$rsani,$catft);
         }
     }
 
@@ -361,6 +362,30 @@ class Valores {
        
         $result = mysqli_query($liga, $query) or die("<script>window.location.href='index.php?edit=no';</script>");
         
+    }
+    
+    function getCompanySelect(){
+        include 'conexion.php';
+        $query = "select * from empresas";
+        $result = mysqli_query($liga, $query);
+        while ($row = mysqli_fetch_array($result)) {
+            $nameCompany = $row['name_empre'];
+            $idCompany = $row['id_empresas'];
+
+            echo '<option value="'.$idCompany.'">'.$nameCompany.'</option>';
+            //<td align="center"><a href="getEmpleado.php?idEmp=' . $idEmp . '"><span style="margin-left:10px;" class="glyphicon glyphicon-eye-open"></span></a></td>
+        }
+    }
+    
+    function updateMaterial($claveCbb,$descripcion,$marca,$empresa,$precio,$preciou,$preciov,$grcn,$presentacion,$porigen,$fechve,$obse) {
+        include 'conexion.php';
+        $query = "UPDATE `material` SET `marc_mat`='$marca',`id_empr`='$empresa',"
+                . "`prcio_mat`='$precio',`prciou_mat`='$preciou',`prciov_mat`='$preciov',`grcn_mat`='$grcn',"
+                . "`prese_mat`='$presentacion',`id_pais`='$porigen',`fechve_mat`='$fechve',`obse_mat`='$obse' WHERE `id_mat`=$claveCbb";
+
+       
+        $result = mysqli_query($liga, $query) or die();
+        //"<script>window.location.href='index.php?edit=no';</script>"
     }
 
 }
