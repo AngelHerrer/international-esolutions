@@ -99,6 +99,12 @@ $valores = new Valores();
                             <li>
                                 <a href="addEmp.php"><i class="glyphicon glyphicon-upload fa-fw"></i> Nuevo MAterial</a>
                             </li>
+                            <li>
+                                <a href="addComp.php"><i class="glyphicon glyphicon-upload fa-fw"></i> Nuevo Empresa</a>
+                            </li>
+                            <li>
+                                <a href="getAllCompanies.php"><i class="glyphicon glyphicon-upload fa-fw"></i> Empresas</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
