@@ -260,8 +260,8 @@ class Valores {
 
     function saveEmployee($claveCbb, $descripcion, $marca, $empresa, $precio, $preciou, $preciov, $grcn, $presentacion, $porigen, $fechve, $obse, $rsani, $catft) {
         include 'conexion.php';
-        $query = "INSERT INTO material VALUES ('$claveCbb','$descripcion','$marca',$empresa,$precio,$preciou,$preciov,'$grcn','$presentacion',$porigen,'$fechve','$obse','$rsani','$catft')";
-        echo $query;
+        $query = "INSERT INTO interna_solutions.material VALUES ('$claveCbb','$descripcion','$marca',$empresa,$precio,$preciou,$preciov,'$grcn','$presentacion',$porigen,'$fechve','$obse','$rsani','$catft')";
+        //echo $query;
         if ($result = mysqli_query($liga, $query)) {
             echo '<script type="text/javascript">';
             echo 'window.location.href="addEmp.php?succes=ok";';
