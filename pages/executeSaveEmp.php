@@ -22,7 +22,7 @@ $url = sprintf("%s://%s%s",isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off
 
 $target_path2 = 'sanitario/';
 $target_path2 = $target_path2 . basename( $archivo2pdf);
-
+var_dump($target_path2);
 if(move_uploaded_file($_FILES['rsani']['tmp_name'], $target_path2)) {
     echo 'se subio sanitario';
 } else{
@@ -36,6 +36,7 @@ $archivo2 = $claveCbb.'f.pdf';
 $url2 = sprintf("%s://%s%s",isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http',$_SERVER['SERVER_NAME'],'/international-esolutions/pages/fichas/'.$archivo2 );
 $target_path = 'fichas/';
 $target_path = $target_path . basename( $archivo2);
+var_dump($target_path);
 if(move_uploaded_file($_FILES['catft']['tmp_name'], $target_path)) {
     echo 'si subio las fichas';
 } else{
