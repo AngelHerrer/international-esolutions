@@ -34,9 +34,9 @@ class Valores {
         $query = "INSERT INTO material VALUES ('$claveCbb','$descripcion','$marca',$empresa,$precio,$preciou,$preciov,'$grcn','$presentacion',$porigen,'$fechve','$obse','$rsani','$catft')";
         echo $query;
         if (!$result = mysqli_query($liga, $query)) {
-            echo '<script type="text/javascript">';
-            echo 'window.location.href="addEmp.php?succes=ok";';
-            echo '</script>';
+//            echo '<script type="text/javascript">';
+//            echo 'window.location.href="addEmp.php?succes=ok";';
+//            echo '</script>';
         } else {
             echo("Error description: " . mysqli_error($liga));
         }
