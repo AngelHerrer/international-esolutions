@@ -128,7 +128,7 @@ $valores = new Valores();
                 </div>
 
                 <!-- /.row -->
-                <form role="form" enctype="multipart/form-data" action="executeSaveEmp.php" method="get" class="form-inline">
+                <form role="form" enctype="multipart/form-data" action="executeSaveEmp.php" method="post" class="form-inline">
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="panel panel-default">
