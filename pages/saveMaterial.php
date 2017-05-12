@@ -2,7 +2,7 @@
 error_reporting(E_ALL ^ E_NOTICE);
 include 'function.php';
 $valores = new Valores();
-//var_dump(extract($_REQUEST));
+extract($_REQUEST);
 //echo $claveCbb . '<br>' . $descripcion . '<br>' . $marca . '<br>' . $empresa . '<br>' . $precio . '<br>' . $preciou . '<br>' . $preciov . '<br>' . $grcn . '<br>' . $presentacion . '<br>' . $porigen . '<br>' . $fechve . '<br>' . $obse . '<br>' . $rsani . '<br>' . $catft;
 
 $archivopdf = $_FILES['rsani']['name'];
