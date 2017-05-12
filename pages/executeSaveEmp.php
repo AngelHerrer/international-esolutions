@@ -29,7 +29,7 @@ if(move_uploaded_file($_FILES['catft']['tmp_name'], $target_path)) {
 } else{
     echo 'no subio las fichas';
 }
-die();
+
 $valores->saveEmployee($claveCbb, $descripcion, $marca, $empresa, $precio, $preciou, $preciov, $grcn, $presentacion, $porigen, $fechve, $obse, $url, $url2);
 ?>
 
