@@ -6,6 +6,7 @@ $valores = new Valores();
 //echo $claveCbb . '<br>' . $descripcion . '<br>' . $marca . '<br>' . $empresa . '<br>' . $precio . '<br>' . $preciou . '<br>' . $preciov . '<br>' . $grcn . '<br>' . $presentacion . '<br>' . $porigen . '<br>' . $fechve . '<br>' . $obse . '<br>' . $rsani . '<br>' . $catft;
 
 $archivopdf = $_FILES['rsani']['name'];
+var_dump($archivopdf);
 $archivo2pdf = $claveCbb.'s.pdf';
 $url = sprintf("%s://%s%s",isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http',$_SERVER['SERVER_NAME'],'/international-esolutions/pages/sanitario/'.$archivo2pdf );
 
@@ -19,6 +20,7 @@ if(move_uploaded_file($_FILES['rsani']['tmp_name'], $target_path2)) {
 }
 
 $archivo = $_FILES['catft']['name'];
+var_dump($archivo);
 $archivo2 = $claveCbb.'f.pdf';
 $url2 = sprintf("%s://%s%s",isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http',$_SERVER['SERVER_NAME'],'/international-esolutions/pages/fichas/'.$archivo2 );
 $target_path = 'fichas/';
