@@ -157,6 +157,60 @@ class Valores {
         $result = mysqli_query($liga, $query) or die();
         //"<script>window.location.href='index.php?edit=no';</script>"
     }
+    
+    function getMaterialAllCotiza() {
+        include 'conexion.php';
+        $query = "select * from material";
+        $result = mysqli_query($liga, $query);
+        while ($row = mysqli_fetch_array($result)) {
+            $claveCbb = $row['id_mat'];
+            $descripcion = $row['desc_mat'];
+            $marca = $row['marc_mat'];
+            $empresa = $row['id_empr'];
+            $precio = $row['prcio_mat'];
+            $preciou = $row['priciou_mat'];
+            $preciov = $row['priciov_mat'];
+            $grcn = $row['grcn_mat'];
+            $presentacion = $row['prese_mat'];
+            $porigen = $row['id_pais'];
+            $fechve = $row['fechve_mat'];
+            $obse = $row['obse_mat'];
+            $rsani = $row['rsani_mat'];
+            $catft = $row['catft_mat'];
+
+            echo '<tr><td><a href="descripcion.php?id_mat=' . $claveCbb . '">' . $claveCbb . '</a></td><td>' . $descripcion . '</td><td>' . $marca . '</td><td>' . $empresa . '</td><td>' . $presentacion . '</td><td>' . $precio . '</td><td><input type="checkbox" name="idMat[]" value="'.$claveCbb.'"></td></tr>';
+            //<td align="center"><a href="getEmpleado.php?idEmp=' . $idEmp . '"><span style="margin-left:10px;" class="glyphicon glyphicon-eye-open"></span></a></td>
+        }
+    }
+    
+    function getMaterial($idMat){
+        include 'conexion.php';
+        $query = "select * from material where id_mat=$idMat";
+        
+        $result = mysqli_query($liga, $query);
+        if($result === FALSE) { 
+            die(mysql_error()); // TODO: better error handling
+        }
+        while ($row = mysqli_fetch_array($result)) {
+            $claveCbb = $row['id_mat'];
+            $descripcion = $row['desc_mat'];
+            $marca = $row['marc_mat'];
+            $empresa = $row['id_empr'];
+            $precio = $row['prcio_mat'];
+            $preciou = $row['priciou_mat'];
+            $preciov = $row['priciov_mat'];
+            $grcn = $row['grcn_mat'];
+            $presentacion = $row['prese_mat'];
+            $porigen = $row['id_pais'];
+            $fechve = $row['fechve_mat'];
+            $obse = $row['obse_mat'];
+            $rsani = $row['rsani_mat'];
+            $catft = $row['catft_mat'];
+
+            echo '<tr><td>' . $claveCbb . '</td><td>' . $descripcion . '</td><td>' . $marca . '</td><td>' . $empresa . '</td><td>' . $presentacion . '</td><td>' . $precio . '</td><td><input type="text" name="qty" class="form-control qty-cot" ></td></tr>';
+            //<td align="center"><a href="getEmpleado.php?idEmp=' . $idEmp . '"><span style="margin-left:10px;" class="glyphicon glyphicon-eye-open"></span></a></td>
+        }
+    }
 
 }
 ?>
